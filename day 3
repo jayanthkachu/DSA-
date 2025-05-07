@@ -1,0 +1,193 @@
+** Nested loops: A nested loop is a loop that exists inside another loop. In Java, any type of loop (for, while, or do-while) can be nested within another.
+.for every problem there will three types of solutions 
+  1.brute force
+  2.Better 
+  3.optimal
+  most of the brute solutions will get using loops and most if the solutions will be solved using two loops
+ex:
+  import java.util.*;
+
+class main {
+  public static void main(string []args){
+    int a=0;
+    for(int i=1;i<5;i++){
+      for(int j=1;j<5;j++){
+        
+      }
+    }
+  
+  }
+}
+
+
+**  Pattern printing : 
+step 1: print number of rows 
+step 2:print number of coloumns
+step 3:print what to print and what not to print 
+
+ex:
+  import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    for (int i = 1; i <= 5; i++) {
+      for (int j = 1; j <= 5; j++) {
+       System.out.println("*");  
+      }
+      System.out.println();  
+    }
+  }
+}
+
+OUTPUT:
+*
+*
+*
+*
+*
+
+*
+*
+*
+*
+*
+
+*
+*
+*
+*
+*
+
+*
+*
+*
+*
+*
+
+*
+*
+*
+*
+*
+
+
+ex2:
+
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    int rows=5,cols=5;
+
+    for (int i = 1; i <= rows; i++) {
+      for (int j = 1; j <= cols; j++) {
+        if (i == 1 || i == rows || j == 1 || j == cols) {
+          System.out.print("* ");
+        } else {
+          System.out.print("  ");  
+        }
+      }
+      
+      System.out.println(); 
+      
+    }
+  }
+}
+
+output:
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+
+  
+ADDRESS MAPPING:
+
+  class Main {
+  public static void main(String[] args) {
+    int n = 5;  
+
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= n; j++) {
+        if (i == 1 || i == n || j == 1 || j == n || j == n - i + 1) {
+          System.out.print("* ");
+        } else {
+          System.out.print("  "); 
+        }
+      }
+      System.out.println();  
+    }
+  }
+}
+
+**printing prime number or not
+
+ import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    int num = sc.nextInt();
+    int count = 0;
+
+    for (int i = 1; i <= num; i++) {
+      if (num % i == 0) {
+        count++;
+      }
+    }
+
+    if (count == 2) {
+      System.out.println(num + " is a Prime Number.");
+    } else {
+      System.out.println(num + " is NOT a Prime Number.");
+    }
+  }
+}
+
+
+
+
+
+**amstrong number :An Armstrong number (also called a narcissistic number) is a number that is equal to the sum of the cubes of its digits (for 3-digit numbers).
+For example:
+
+153 = 1³ + 5³ + 3³ = 1 + 125 + 27 = 153 → Armstrong
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    int num = sc.nextInt();
+    int original = num;
+    int sum = 0;
+
+    while (num > 0) {
+      int digit = num % 10;
+      sum += digit * digit * digit;
+      num = num / 10;
+    }
+
+    if (sum == original) {
+      System.out.println(original + " is an Armstrong Number.");
+    } else {
+      System.out.println(original + " is NOT an Armstrong Number.");
+    }
+  }
+}
+
+
+
+
+
+  
+
+
+
+
+
+  
+
