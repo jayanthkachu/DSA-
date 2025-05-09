@@ -73,7 +73,12 @@ class Main {
     }
 }
 
-     
+
+**Decalering and intializing the array with size:
+  int[] arr=new int[5];
+
+-once u created the array along with size it cant be modified the size will be fixed and this porsene int[] arr will be created in stack memoery and new keyword helps to create object space for the  array
+
 
        
   
