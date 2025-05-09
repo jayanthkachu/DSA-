@@ -1,0 +1,82 @@
+int a=5
+int b=4
+int c=3  
+
+- all the referance names will be stored in stack memory and all the values which for assigned for those variables will be stored in weak memory
+  
+ Q) ALL th blocks having same blocks in same datatypes.if all the blocks having the same data
+
+ ARRAY: collection of similar type of data in a continoues allocation 
+ex:if variable A store at address 100 then the second value of array should be allocated at 104
+
+syntax:
+  class main{
+      public static void main(string []
+args )
+        int[] arr=(1,2,3,4,5};
+        int[] arr;
+         arr={1,2,3,4,5};          
+ }
+}
+
+  * decalaration and intialization happed at same time 
+
+  -if you want to get the data previously we store all the data values in separate variables(individual variables).if you want get the data we can simply print the variables and in array we have to print  the data 
+   -index values start with by default zero
+
+   class  main{
+     public static void main(string []
+args )
+       int[] arr=(1,2,3,4,5};
+
+       for(int i =0;i<arr;i++){
+         system.out.println(arr[i]);
+       }
+                  }
+
+  -to get the size of array we have to use arr.length()
+   -to get the len of string we have to use str.length()               
+
+   type of output format:
+1. we can use simple for loop to we get the output.
+2. using for each loop 
+3. Arrays.toString(arr);
+
+> to string is an in-built method to print array values.
+> internally to string contains for loop and it will be print along with open and closed brackets 
+  followed by commas.
+
+***CAMELCASE AND SNAKECASE:
+
+#int odd_count; snakecase
+#int oddCount; camelcase
+
+> java strictly follows the camelcase
+
+Q) in a given array get count of odd numbers and even numbers.
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5,9,11};
+        int oddCount = 0;
+        int evenCount= 0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]%2 == 0){
+               evenCount++;
+            }
+            else{
+                oddCount++;
+            }
+        }
+        System.out.println(oddCount);
+        System.out.println(evenCount);
+        
+    }
+}
+
+     
+
+       
+  
+
+                   
+  
