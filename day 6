@@ -1,0 +1,18 @@
+coloumss are dynamic
+
+  ex:class main{
+    public static void main(string[]args){
+      scanner sc= new scanner (system.in):
+      int[][] arr={
+        {1,2,3}
+        {4,5}
+        {6,7,8,9}
+      };
+
+      for(int i=0;i<arr.lenght;i++){
+        system.out.println(arrays.tostring(arr[i]):
+       }
+       system.out.println();                    
+     }
+   }
+      
